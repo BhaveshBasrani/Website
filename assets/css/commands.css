@@ -1,0 +1,40 @@
+/* General Styles for Command Items */
+
+/* Styles for Active List Group Item */
+
+.list-group-item.active {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+}
+
+/* General Styles for List Group Items */
+
+.list-group-item {
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #e9ecef;
+}
+
+/* Animation for Fade In Effect */
+
+/* Search Input Styles */
+
+#commandSearch {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+/* Command List Container */
+
+#commandsList {
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+

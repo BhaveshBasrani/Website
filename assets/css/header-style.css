@@ -1,0 +1,26 @@
+/* Ensure the navbar background is dark and text is white */
+
+/* Style the user profile picture and name */
+
+#user-profile-picture {
+  display: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+#user-name {
+  display: none;
+  margin-left: 10px;
+  color: white;
+}
+
+/* Style the login button */
+
+#login-button {
+  background: #0d6efd;
+  font-weight: bold;
+  height: 36px;
+  width: 93.6719px;
+}
+

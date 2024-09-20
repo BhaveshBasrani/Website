@@ -2,3 +2,31 @@
   border-radius: .5rem;
 }
 
+.bs-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #007bff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.bs-icon:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.bs-icon.bs-icon-lg {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+.bs-icon.bs-icon-sm {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+}

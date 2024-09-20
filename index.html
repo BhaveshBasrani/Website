@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="dark" lang="en">
+<html data-bs-theme="light" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -34,7 +34,6 @@
     <link rel="stylesheet" href="assets/css/Hero-Features-icons.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
 </head>
-
 <body style="border-style: none">
     <nav class="navbar navbar-expand-md bg-dark py-3" data-bs-theme="dark">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><span class="d-flex justify-content-center align-items-center bs-icon-sm bs-icon-rounded bs-icon-primary me-2 bs-icon" style="width:65px;height:65px;background:url('assets/img/standard%20(1).gif') center / contain repeat;"></span></a><button data-bs-toggle="collapse" data-bs-target="#navcol-5" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -44,21 +43,24 @@
                     <li class="nav-item"><a class="nav-link" href="About-Us.html">About Us</a></li>
                     <li class="nav-item"></li>
                 </ul>
-                <div class="d-flex align-items-center"><a class="btn btn-primary ms-md-2" role="button" id="login-button" style="background: #0d6efd;font-weight: bold;height: 46px;width: 96.6719px;" href="https://discord.com/oauth2/authorize?client_id=1082711487828734002&amp;permissions=8&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fwww.yourjamify.tech%2F&amp;integration_type=0&amp;scope=bot+applications.commands+identify">Login</a><img id="user-profile-picture" style="display:none;width:36px;height:36px;border-radius:50%;margin-left:10px;"><span class="navbar-text" id="user-name" style="color:white;margin-left:10px;"></span></div>
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-primary ms-md-2" role="button" id="login-button" style="background: #0d6efd; font-weight: bold; height: 46px; width: 96.6719px;" href="https://discord.com/oauth2/authorize?client_id=1082711487828734002&amp;permissions=8&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fwww.yourjamify.tech%2F&amp;integration_type=0&amp;scope=bot+applications.commands+identify">Login</a>
+                    <img id="user-profile-picture" style="display:none; width:36px; height:36px; border-radius:50%; margin-left:10px;">
+                    <span class="navbar-text" id="user-name" style="color:white; margin-left:10px;"></span>
+                </div></div>
             </div>
         </div>
     </nav>
     <section>
-        <div style="height: 600px;background: url(&quot;assets/img/standard.gif&quot;) center / cover;">
+        <div class="container-fluid p-0" style="height: 600px; background: url('assets/img/standard.gif') center / cover;">
             <section>
-                <div data-bss-parallax-bg="true" style="height: 600px;background: url(&quot;assets/img/standard.gif&quot;) center / cover;">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="col-md-6 col-xl-12 col-xxl-12 offset-xl-0 offset-xxl-0 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
-                                <div style="max-width: 350px;padding-left: 0px;margin-left: -814px;margin-right: 7px;padding-right: 0px;">
-                                    <h1 class="text-uppercase fw-bold" style="color: var(--bs-secondary-bg);padding-right: 0px;margin-right: -153px;font-size: 46px;">Invite Me <br>Right Now!!!</h1>
-                                    <p class="my-3" style="color: var(--bs-secondary-bg);margin: 38px 0px;font-size: 21px;">The Only Discord Bot<br>You Would Ever Need!</p><a class="btn btn-primary btn-lg me-2" role="button" data-bss-hover-animate="pulse" href="https://discord.com/oauth2/authorize?client_id=1082711487828734002&amp;permissions=8&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fwww.yourjamify.tech%2F&amp;integration_type=0&amp;scope=bot+applications.commands+identify" style="font-size: 22px;"><strong>Invite Me</strong></a>
-                                </div>
+                <div data-bss-parallax-bg="true" class="d-flex align-items-center" style="height: 600px; background: url('assets/img/standard.gif') center / cover;">
+                    <div class="container">
+                        <div class="row justify-content-start align-items-center text-left"></div>
+                            <div class="col-md-8 col-lg-6">
+                                <h1 class="text-uppercase fw-bold" style="color: var(--bs-secondary-bg); font-size: 46px;">Invite Me <br>Right Now!!!</h1>
+                                <p class="my-3" style="color: var(--bs-secondary-bg); font-size: 21px;">The Only Discord Bot<br>You Would Ever Need!</p>
+                                <a class="btn btn-primary btn-lg" role="button" data-bss-hover-animate="pulse" href="https://discord.com/oauth2/authorize?client_id=1082711487828734002&amp;permissions=8&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fwww.yourjamify.tech%2F&amp;integration_type=0&amp;scope=bot+applications.commands+identify" style="font-size: 22px;"><strong>Invite Me</strong></a>
                             </div>
                         </div>
                     </div>
@@ -155,6 +157,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="alert alert-dismissible fade show text-center my-4" role="alert" style="border-radius: 10px; background: none; border: none; max-width: 90%; margin: 0 auto;">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style="filter: invert(1); position: absolute; top: 10px; right: 10px;"></button>
+            <img src="assets/img/ad_1.gif" alt="Ad" style="max-width: 100%; height: auto; border-radius: 10px; margin-top: 10px;">
+            <p class="mt-2" style="color: #fff; font-size: 1.1rem;">These ads help us maintain Jamify. Thank you for your support!</p>
         </div>
         <footer class="text-center py-4">
             <div class="container">

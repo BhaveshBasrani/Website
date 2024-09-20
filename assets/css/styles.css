@@ -1,70 +1,84 @@
+/* Variables for colors */
+:root {
+  --background-color: #1c1c1c;
+  --text-color: #fff;
+  --primary-color: #007bff;
+  --secondary-color: #343a40;
+}
+
+/* Global Styles */
 body {
-  background-color: #1c1c1c;
-  color: #fff;
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   margin-top: 20px;
 }
 
+/* Footer Styles */
 .footer {
-  background-color: #343a40;
+  background-color: var(--secondary-color);
   padding: 20px;
-  border-top: 2px solid #007bff;
+  border-top: 2px solid var(--primary-color);
   border-radius: 10px;
   margin-top: 20px;
 }
 
+/* List Group Styles */
 .list-group-item {
-  background-color: #343a40;
-  color: #fff;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.list-group-item.active {
-  background-color: #007bff;
-  color: #fff;
+.list-group-item.active,
+.list-group-item:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
   font-weight: bold;
   border-radius: 5px;
 }
 
-.list-group-item:hover {
-  background-color: #007bff;
-  color: #fff;
-}
-
+/* Command List Styles */
 .command-list {
-  background-color: #1c1c1c;
+  background-color: var(--background-color);
   padding: 20px;
   border-radius: 10px;
 }
 
+/* Command Search Styles */
 #commandSearch {
   border-radius: 5px;
-  background-color: #343a40;
-  color: #fff;
-  border: 1px solid #007bff;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
   padding: 10px;
+  transition: border-color 0.3s ease;
 }
 
 #commandSearch:focus {
-  background-color: #343a40;
-  color: #fff;
-  border-color: #007bff;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-color: var(--primary-color);
 }
 
+/* Footer Links Styles */
 footer ul li {
   margin-bottom: 10px;
 }
 
 footer ul li a {
-  color: #007bff;
+  color: var(--primary-color);
   text-decoration: none;
+  transition: text-decoration 0.3s ease;
 }
 
 footer ul li a:hover {
   text-decoration: underline;
 }
-

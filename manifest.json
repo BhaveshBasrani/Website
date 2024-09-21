@@ -1,1 +1,18 @@
-{"short_name":"Jam","name":"Jamify","icons":[{"src":"https://wwwyourjamify.tech/assets/img/standard%20(1).gif","type":"image/gif","sizes":"256x256"},{"src":"https://wwwyourjamify.tech/assets/img/standard%20(2).gif","type":"image/gif","sizes":"960x540"}],"start_url":"index.html","display":"fullscreen"}
+{
+    "short_name": "Jami",
+    "name": "Jamify",
+    "icons": [
+        {
+            "src": "https://wwwyourjamify.tech/assets/img/standard%20(1).gif",
+            "type": "image/gif",
+            "sizes": "256x256"
+        },
+        {
+            "src": "https://wwwyourjamify.tech/assets/img/standard%20(2).gif",
+            "type": "image/gif",
+            "sizes": "960x540"
+        }
+    ],
+    "start_url": "index.html",
+    "display": "fullscreen"
+}

@@ -1,11 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const isIndexPage = window.location.pathname === '/index.html' || window.location.pathname === '/';  // Check if on index.html
 
-    // Only proceed if we are on the index page where login is required
     if (isIndexPage) {
         const loginButton = document.getElementById('login-button');
-        const userNameElement = document.getElementById('user-name');
-        const userProfilePictureElement = document.getElementById('user-profile-picture');
 
         loginButton.addEventListener('click', () => {
             window.location.href = AUTHORIZATION_URL;
@@ -71,10 +68,16 @@ function fetchUserProfile(accessToken) {
             const userProfilePictureElement = document.getElementById('user-profile-picture');
             const loginButton = document.getElementById('login-button');
 
-            userNameElement.textContent = userData.username;
-            userProfilePictureElement.src = `https://cdn.discordapp.com/avatars/${userData.id}/${userData.avatar}.png`;
-            userProfilePictureElement.style.display = 'block';  // Show profile picture
-            loginButton.style.display = 'none';  // Hide login button after login
+            if (userNameElement) {
+                userNameElement.textContent = userData.username;
+            }
+            if (userProfilePictureElement) {
+                userProfilePictureElement.src = `https://cdn.discordapp.com/avatars/${userData.id}/${userData.avatar}.png`;
+                userProfilePictureElement.style.display = 'block';  // Show profile picture
+            }
+            if (loginButton) {
+                loginButton.style.display = 'none';  // Hide login button after login
+            }
         } else {
             console.error('Failed to fetch user profile:', userData);
         }

@@ -3,11 +3,48 @@
 /* Styles for Active List Group Item */
 
 .list-group-item.active {
-  background-color: #0d6efd;
+  background-color: #0648aa;
   border-color: #0d6efd;
   color: white;
 }
+/* Styles for Inactive List Group Item */
 
+.list-group-item.inactive {
+  background-color: #f8f9fa;
+  border-color: #ddd;
+  color: #6c757d;
+}
+
+/* Styles for Disabled List Group Item */
+
+.list-group-item.disabled {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+  color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* Styles for List Group Item with Badge */
+
+.list-group-item .badge {
+  background-color: #0d6efd;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Styles for List Group Item with Icon */
+
+.list-group-item .icon {
+  margin-right: 10px;
+  color: #0d6efd;
+}
+
+/* Styles for List Group Item with Custom Padding */
+
+.list-group-item.custom-padding {
+  padding: 20px;
+}
 /* General Styles for List Group Items */
 
 .list-group-item {

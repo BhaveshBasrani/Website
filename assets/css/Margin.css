@@ -1,7 +1,9 @@
-body {
+body, html {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  width: 100%; /* Ensure body width is 100% */
 }
 
 /* Base styles */
@@ -140,6 +142,26 @@ p {
 /* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1201px) {
   body {
-    width: 1367px;
+    width: 100%; /* Ensure body width is 100% */
   }
+}
+
+/* Style the vertical scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6a11cb 0%, #2575fc 100%); /* Gradient color for the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  border: 3px solid #f1f1f1; /* Add a border to create a gap between the thumb and track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #5b0e99 0%, #1e5bbf 100%); /* Darker gradient color on hover */
 }
